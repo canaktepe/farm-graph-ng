@@ -22,16 +22,13 @@ export class FarmGraphComponent implements OnInit {
 
   constructor(private router: Router) {
     this.routerListener = this.router.events.subscribe((event: RouterEvent) => {
-    
       if (event instanceof NavigationEnd) {
-
         this.navigateComponent(event);
       }
     });
   }
 
   ngOnInit() {
-
     // console.log(window);
   }
 

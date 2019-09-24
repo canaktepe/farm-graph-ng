@@ -209,6 +209,11 @@ myModule = function (callback) {
       var guid = clickedElement.attr("id");
       vm.getCreatedElement(guid, function (data) {
         if (vm.editMode()) {
+
+          localStorage.setItem('ngFarmItem',ko.toJSON(data));
+          location.hash = 'fg-device';
+          return;
+
           farmGraphModule.openModal(true, data, function (cb) {
             farmGraphModule.fillFormData(data);
           });
