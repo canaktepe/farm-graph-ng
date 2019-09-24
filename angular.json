@@ -24,9 +24,25 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/jquery-ui-dist/jquery-ui.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "./node_modules/bootstrap-slider/dist/bootstrap-slider.min.js",
+              "./node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js",
+              "./node_modules/bootstrap-contextmenu/bootstrap-contextmenu.js",
+              "./node_modules/knockout/build/output/knockout-latest.js",
+              "./node_modules/bootstrap-confirmation2/dist/bootstrap-confirmation.min.js",
+              "./node_modules/awesome-notifications/dist/index.var.js",
+              "./src/assets/scripts/farm_graph/start.js",
+              "./src/assets/scripts/farm_graph/jquery.farmdraw.js",
+              "./src/assets/scripts/farm_graph/dataAccess.js",
+              "./src/assets/scripts/farm_graph/modules.js",
+              "./src/assets/scripts/farm_graph/script.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -44,7 +60,7 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true,
+              "buildOptimizer": false,
               "budgets": [
                 {
                   "type": "initial",

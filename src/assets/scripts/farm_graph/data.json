@@ -1,0 +1,2087 @@
+{
+    "d": [
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 0,
+                "y": 0,
+                "w": 8484,
+                "h": 2359
+            },
+            "formData": {
+                "NodeName": "Barn1",
+                "NodeId": 1,
+                "DeviceTypeId": null,
+                "LocationId": null,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 9000,
+            "guid": 374,
+            "type": 9,
+            "order": 1,
+            "border": "5px solid brown",
+            "textColor": null,
+            "color": "transparent",
+            "zIndex": 1,
+            "opacity": null,
+            "name": "Barn",
+            "pageTemplate": "barn.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": [
+                3000,
+                7000,
+                12000,
+                5000,
+                8000,
+                11000,
+                12000
+            ],
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 924,
+                "y": 1089,
+                "w": 7067,
+                "h": 1270
+            },
+            "formData": {
+                "NodeName": "Melkveestal",
+                "NodeId": 1,
+                "DeviceTypeId": null,
+                "LocationId": null,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": {
+                "deviceTypeId": null,
+                "input": true,
+                "output": false,
+                "ignoredTypes": null
+            },
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 7000,
+            "guid": 376,
+            "type": 7,
+            "order": 2,
+            "border": "5px solid black",
+            "textColor": null,
+            "color": "transparent",
+            "zIndex": 2,
+            "opacity": null,
+            "name": "Location",
+            "pageTemplate": "location.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": [
+                3000,
+                4000,
+                5000,
+                8000,
+                10000
+            ],
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 3400,
+                "y": 83,
+                "w": 4558,
+                "h": 684
+            },
+            "formData": {
+                "NodeName": "verse koeien",
+                "NodeId": 10,
+                "DeviceTypeId": null,
+                "LocationId": null,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": {
+                "deviceTypeId": null,
+                "input": true,
+                "output": false,
+                "ignoredTypes": null
+            },
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 7000,
+            "guid": 375,
+            "type": 7,
+            "order": 2,
+            "border": "5px solid black",
+            "textColor": null,
+            "color": "transparent",
+            "zIndex": 2,
+            "opacity": null,
+            "name": "Location",
+            "pageTemplate": "location.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": [
+                3000,
+                4000,
+                5000,
+                8000,
+                10000
+            ],
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 8160,
+                "y": 49,
+                "w": 290,
+                "h": 663
+            },
+            "formData": {
+                "NodeName": "Droog1",
+                "NodeId": 5,
+                "DeviceTypeId": null,
+                "LocationId": null,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": {
+                "deviceTypeId": null,
+                "input": true,
+                "output": false,
+                "ignoredTypes": null
+            },
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 7000,
+            "guid": 381,
+            "type": 7,
+            "order": 2,
+            "border": "5px solid black",
+            "textColor": null,
+            "color": "transparent",
+            "zIndex": 2,
+            "opacity": null,
+            "name": "Location",
+            "pageTemplate": "location.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": [
+                3000,
+                4000,
+                5000,
+                8000,
+                10000
+            ],
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 887,
+                "y": 44,
+                "w": 2482,
+                "h": 662
+            },
+            "formData": {
+                "NodeName": "Droog2",
+                "NodeId": 6,
+                "DeviceTypeId": null,
+                "LocationId": null,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": {
+                "deviceTypeId": null,
+                "input": true,
+                "output": false,
+                "ignoredTypes": null
+            },
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 7000,
+            "guid": 382,
+            "type": 7,
+            "order": 2,
+            "border": "5px solid black",
+            "textColor": null,
+            "color": "transparent",
+            "zIndex": 2,
+            "opacity": null,
+            "name": "Location",
+            "pageTemplate": "location.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": [
+                3000,
+                4000,
+                5000,
+                8000,
+                10000
+            ],
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 738,
+                "y": 1114,
+                "w": 440,
+                "h": 224
+            },
+            "formData": {
+                "NodeName": "Separatie",
+                "NodeId": 2,
+                "DeviceTypeId": null,
+                "LocationId": null,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": {
+                "deviceTypeId": null,
+                "input": true,
+                "output": false,
+                "ignoredTypes": null
+            },
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 10000,
+            "guid": 379,
+            "type": 10,
+            "order": 3,
+            "border": null,
+            "textColor": null,
+            "color": "rgb(232, 244, 66,.5)",
+            "zIndex": 2,
+            "opacity": null,
+            "name": "Area",
+            "pageTemplate": "area.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 921,
+                "y": 32,
+                "w": 180,
+                "h": 625
+            },
+            "formData": {
+                "NodeName": "CUBICLE_338",
+                "NodeId": 368,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 5,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": false
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 368,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 921,
+                "y": 0,
+                "w": 180,
+                "h": 625
+            },
+            "formData": {
+                "NodeName": "CUBICLE_274",
+                "NodeId": 344,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 5,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": false
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 344,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 921,
+                "y": 32,
+                "w": 180,
+                "h": 625
+            },
+            "formData": {
+                "NodeName": "CUBICLE_296",
+                "NodeId": 358,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 5,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": false
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 358,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 921,
+                "y": 0,
+                "w": 180,
+                "h": 625
+            },
+            "formData": {
+                "NodeName": "CUBICLE_316",
+                "NodeId": 359,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 5,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": false
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 359,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 83,
+                "y": 1777,
+                "w": 500,
+                "h": 500
+            },
+            "formData": {
+                "NodeName": "MelkTank",
+                "NodeId": 0,
+                "DeviceTypeId": null,
+                "LocationId": null,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 11000,
+            "guid": 380,
+            "type": 11,
+            "order": 4,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(202, 204, 206,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Milk Tank",
+            "pageTemplate": "withoutdata.html",
+            "resizable": true,
+            "radius": true,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 3387,
+                "y": 1397,
+                "w": 1232,
+                "h": 440
+            },
+            "formData": {
+                "NodeName": "CUBICLE_330",
+                "NodeId": 364,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 11,
+                    "FitIsDouble": true,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 364,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 4835,
+                "y": 1402,
+                "w": 1456,
+                "h": 440
+            },
+            "formData": {
+                "NodeName": "CUBICLE_331",
+                "NodeId": 365,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 13,
+                    "FitIsDouble": true,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 365,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 6518,
+                "y": 1402,
+                "w": 1232,
+                "h": 440
+            },
+            "formData": {
+                "NodeName": "DubbelAchter",
+                "NodeId": 366,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 11,
+                    "FitIsDouble": true,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 366,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 1755,
+                "y": 1402,
+                "w": 1456,
+                "h": 440
+            },
+            "formData": {
+                "NodeName": "DubbelVoor",
+                "NodeId": 350,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 13,
+                    "FitIsDouble": true,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 350,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 3387,
+                "y": 1397,
+                "w": 1232,
+                "h": 440
+            },
+            "formData": {
+                "NodeName": "CUBICLE_288",
+                "NodeId": 351,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 11,
+                    "FitIsDouble": true,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 351,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 4835,
+                "y": 1402,
+                "w": 1456,
+                "h": 440
+            },
+            "formData": {
+                "NodeName": "CUBICLE_289",
+                "NodeId": 352,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 13,
+                    "FitIsDouble": true,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 352,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 1000,
+                "y": 1800,
+                "w": 200,
+                "h": 423
+            },
+            "formData": {
+                "NodeName": "R1",
+                "NodeId": 25,
+                "DeviceTypeId": 51,
+                "LocationId": 1,
+                "DeviceUrl": "",
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": [
+                {
+                    "__type": "T4C.farm_graph.backend.Models.Routing",
+                    "id": "1",
+                    "from": 354,
+                    "gate": "L ",
+                    "isDefault": true,
+                    "isDeleted": false,
+                    "to": {
+                        "id": 376,
+                        "name": "Melkveestal"
+                    }
+                },
+                {
+                    "__type": "T4C.farm_graph.backend.Models.Routing",
+                    "id": "2",
+                    "from": 354,
+                    "gate": "R ",
+                    "isDefault": false,
+                    "isDeleted": false,
+                    "to": {
+                        "id": 355,
+                        "name": "R2"
+                    }
+                }
+            ],
+            "positionIsUpdated": false,
+            "id": 3000,
+            "guid": 354,
+            "type": 3,
+            "order": 5,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(195, 10, 20,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "AstronautA5",
+            "pageTemplate": "device.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": [
+                {
+                    "deviceTypeId": 1,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 3,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        1,
+                        9,
+                        43,
+                        51
+                    ]
+                },
+                {
+                    "deviceTypeId": 9,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 43,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 51,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 1000,
+                "y": 1320,
+                "w": 200,
+                "h": 423
+            },
+            "formData": {
+                "NodeName": "R2",
+                "NodeId": 24,
+                "DeviceTypeId": 51,
+                "LocationId": 1,
+                "DeviceUrl": "",
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": [
+                {
+                    "__type": "T4C.farm_graph.backend.Models.Routing",
+                    "id": "3",
+                    "from": 355,
+                    "gate": "L ",
+                    "isDefault": true,
+                    "isDeleted": false,
+                    "to": {
+                        "id": 376,
+                        "name": "Melkveestal"
+                    }
+                },
+                {
+                    "__type": "T4C.farm_graph.backend.Models.Routing",
+                    "id": "4",
+                    "from": 355,
+                    "gate": "R ",
+                    "isDefault": false,
+                    "isDeleted": false,
+                    "to": {
+                        "id": 379,
+                        "name": "Separatie"
+                    }
+                }
+            ],
+            "positionIsUpdated": false,
+            "id": 3000,
+            "guid": 355,
+            "type": 3,
+            "order": 5,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(195, 10, 20,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "AstronautA5",
+            "pageTemplate": "device.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": [
+                {
+                    "deviceTypeId": 1,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 3,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        1,
+                        9,
+                        43,
+                        51
+                    ]
+                },
+                {
+                    "deviceTypeId": 9,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 43,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 51,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 5286,
+                "y": 22,
+                "w": 550,
+                "h": 400
+            },
+            "formData": {
+                "NodeName": "R4",
+                "NodeId": 16,
+                "DeviceTypeId": 51,
+                "LocationId": 10,
+                "DeviceUrl": "",
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 3000,
+            "guid": 345,
+            "type": 3,
+            "order": 5,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(195, 10, 20,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "AstronautA5",
+            "pageTemplate": "device.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": [
+                {
+                    "deviceTypeId": 1,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 3,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        1,
+                        9,
+                        43,
+                        51
+                    ]
+                },
+                {
+                    "deviceTypeId": 9,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 43,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 51,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 607,
+                "y": 1486,
+                "w": 235,
+                "h": 400
+            },
+            "formData": {
+                "NodeName": "Central Unit",
+                "NodeId": 23,
+                "DeviceTypeId": 44,
+                "LocationId": 1,
+                "DeviceUrl": "",
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 3000,
+            "guid": 370,
+            "type": 3,
+            "order": 5,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(195, 10, 20,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "CentralUnit",
+            "pageTemplate": "device.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": [
+                {
+                    "deviceTypeId": 1,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 3,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        1,
+                        9,
+                        43,
+                        51
+                    ]
+                },
+                {
+                    "deviceTypeId": 9,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 43,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 51,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 0,
+                "y": 715,
+                "w": 7997,
+                "h": 380
+            },
+            "formData": {
+                "NodeName": "Voergang",
+                "NodeId": 0,
+                "DeviceTypeId": null,
+                "LocationId": null,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 8000,
+            "guid": 357,
+            "type": 8,
+            "order": 2,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(127,127,127,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Feed Area",
+            "pageTemplate": "withoutdata.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 125,
+                "y": 1383,
+                "w": 312,
+                "h": 342
+            },
+            "formData": {
+                "NodeName": "CRS+",
+                "NodeId": 3,
+                "DeviceTypeId": 4,
+                "LocationId": 1,
+                "DeviceUrl": "",
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 3000,
+            "guid": 369,
+            "type": 3,
+            "order": 5,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(195, 10, 20,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "CrsPlus",
+            "pageTemplate": "device.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": [
+                {
+                    "deviceTypeId": 1,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 3,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        1,
+                        9,
+                        43,
+                        51
+                    ]
+                },
+                {
+                    "deviceTypeId": 9,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 43,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 51,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 500,
+                "y": 311,
+                "w": 309,
+                "h": 335
+            },
+            "formData": {
+                "NodeName": "Qwes ISO VPU",
+                "NodeId": 10,
+                "DeviceTypeId": 49,
+                "LocationId": 1,
+                "DeviceUrl": "http://192.168.2.123",
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 3000,
+            "guid": 373,
+            "type": 3,
+            "order": 5,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(195, 10, 20,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "QwesISOVPU",
+            "pageTemplate": "device.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": [
+                {
+                    "deviceTypeId": 1,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 3,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        1,
+                        9,
+                        43,
+                        51
+                    ]
+                },
+                {
+                    "deviceTypeId": 9,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 43,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 51,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 8012,
+                "y": 2102,
+                "w": 390,
+                "h": 257
+            },
+            "formData": {
+                "NodeName": "Vector",
+                "NodeId": 7,
+                "DeviceTypeId": 46,
+                "LocationId": 1,
+                "DeviceUrl": "",
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 3000,
+            "guid": 372,
+            "type": 3,
+            "order": 5,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(195, 10, 20,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Vector",
+            "pageTemplate": "device.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": [
+                {
+                    "deviceTypeId": 1,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 3,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        1,
+                        9,
+                        43,
+                        51
+                    ]
+                },
+                {
+                    "deviceTypeId": 9,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 43,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 51,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 5289,
+                "y": 2083,
+                "w": 458,
+                "h": 252
+            },
+            "formData": {
+                "NodeName": "R3 DDS",
+                "NodeId": 22,
+                "DeviceTypeId": 51,
+                "LocationId": 1,
+                "DeviceUrl": "",
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 3000,
+            "guid": 353,
+            "type": 3,
+            "order": 5,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(195, 10, 20,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "AstronautA5",
+            "pageTemplate": "device.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": [
+                {
+                    "deviceTypeId": 1,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 3,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        1,
+                        9,
+                        43,
+                        51
+                    ]
+                },
+                {
+                    "deviceTypeId": 9,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 43,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 51,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                }
+            ]
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 5843,
+                "y": 26,
+                "w": 2128,
+                "h": 240
+            },
+            "formData": {
+                "NodeName": "CUBICLE_282",
+                "NodeId": 347,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 19,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 347,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 5748,
+                "y": 2092,
+                "w": 2240,
+                "h": 240
+            },
+            "formData": {
+                "NodeName": "CUBICLE_285",
+                "NodeId": 348,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 20,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 348,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 1760,
+                "y": 2087,
+                "w": 3520,
+                "h": 240
+            },
+            "formData": {
+                "NodeName": "CUBICLE_286",
+                "NodeId": 349,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 32,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 349,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 1321,
+                "y": 26,
+                "w": 3960,
+                "h": 240
+            },
+            "formData": {
+                "NodeName": "CUBICLE_294",
+                "NodeId": 356,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 36,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 356,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 1321,
+                "y": 26,
+                "w": 3960,
+                "h": 240
+            },
+            "formData": {
+                "NodeName": "CUBICLE_336",
+                "NodeId": 367,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 36,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": true,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 367,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 5843,
+                "y": 26,
+                "w": 2128,
+                "h": 240
+            },
+            "formData": {
+                "NodeName": "CUBICLE_324",
+                "NodeId": 361,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 19,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 361,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 5748,
+                "y": 2092,
+                "w": 2240,
+                "h": 240
+            },
+            "formData": {
+                "NodeName": "CUBICLE_327",
+                "NodeId": 362,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 20,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 362,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 1760,
+                "y": 2087,
+                "w": 3520,
+                "h": 240
+            },
+            "formData": {
+                "NodeName": "CUBICLE_328",
+                "NodeId": 363,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 32,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 363,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 2860,
+                "y": 524,
+                "w": 1600,
+                "h": 180
+            },
+            "formData": {
+                "NodeName": "CUBICLE_318",
+                "NodeId": 360,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 16,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 360,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 2860,
+                "y": 524,
+                "w": 1600,
+                "h": 180
+            },
+            "formData": {
+                "NodeName": "CUBICLE_276",
+                "NodeId": 346,
+                "DeviceTypeId": null,
+                "LocationId": 0,
+                "DeviceUrl": null,
+                "Cubicle": {
+                    "FitNoOfCubicals": 16,
+                    "FitIsDouble": false,
+                    "FitIsFlipped": false,
+                    "FitIsHorizontal": true
+                }
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 5000,
+            "guid": 346,
+            "type": 5,
+            "order": 1,
+            "border": null,
+            "textColor": null,
+            "color": "rgba(226, 226, 226,0.5)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "Cubicles",
+            "pageTemplate": "cubicle.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 1653,
+                "y": 578,
+                "w": 1150,
+                "h": 100
+            },
+            "formData": {
+                "NodeName": "Droog2",
+                "NodeId": 7,
+                "DeviceTypeId": null,
+                "LocationId": 6,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 4000,
+            "guid": 383,
+            "type": 4,
+            "order": 4,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(198, 140, 83,.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "FeedFence",
+            "pageTemplate": "fence.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 1595,
+                "y": 1088,
+                "w": 3075,
+                "h": 100
+            },
+            "formData": {
+                "NodeName": "Melkkoeien",
+                "NodeId": 5,
+                "DeviceTypeId": null,
+                "LocationId": 1,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 4000,
+            "guid": 377,
+            "type": 4,
+            "order": 4,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(198, 140, 83,.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "FeedFence",
+            "pageTemplate": "fence.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 5906,
+                "y": 633,
+                "w": 1915,
+                "h": 100
+            },
+            "formData": {
+                "NodeName": "Verse koeien",
+                "NodeId": 12,
+                "DeviceTypeId": null,
+                "LocationId": 10,
+                "DeviceUrl": null,
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 4000,
+            "guid": 378,
+            "type": 4,
+            "order": 4,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(198, 140, 83,.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "FeedFence",
+            "pageTemplate": "fence.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": null
+        },
+        {
+            "__type": "T4C.farm_graph.backend.Models.FarmItemJsonResponse",
+            "position": {
+                "x": 5296,
+                "y": 36,
+                "w": 527,
+                "h": 100
+            },
+            "formData": {
+                "NodeName": "CU",
+                "NodeId": 14,
+                "DeviceTypeId": 44,
+                "LocationId": 1,
+                "DeviceUrl": "",
+                "Cubicle": null
+            },
+            "routingEnabled": null,
+            "children": [],
+            "routings": null,
+            "positionIsUpdated": false,
+            "id": 3000,
+            "guid": 371,
+            "type": 3,
+            "order": 5,
+            "border": null,
+            "textColor": "rgb(255, 255, 255)",
+            "color": "rgba(195, 10, 20,0.9)",
+            "zIndex": 3,
+            "opacity": null,
+            "name": "CentralUnit",
+            "pageTemplate": "device.html",
+            "resizable": true,
+            "radius": false,
+            "acceptable": null,
+            "status": false,
+            "routableItems": [
+                {
+                    "deviceTypeId": 1,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 3,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        1,
+                        9,
+                        43,
+                        51
+                    ]
+                },
+                {
+                    "deviceTypeId": 9,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 43,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                },
+                {
+                    "deviceTypeId": 51,
+                    "input": true,
+                    "output": true,
+                    "ignoredTypes": [
+                        3
+                    ]
+                }
+            ]
+        }
+    ]
+}

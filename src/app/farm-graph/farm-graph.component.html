@@ -1,0 +1,351 @@
+<div class="container-fluid pt-3 pb-3">
+  <!--Setup wizard modal -->
+  <div class="modal fade" data-backdrop="static" data-keyboard="false" id="wizardModal" tabindex="-1" role="dialog"
+    aria-labelledby="wizardModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="wizardModalLabel">Welcome to FarmGraph</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="">Here you can make visual overview of the T4C related items on your farm.</p>
+          <p>Make a rough sketch of your farm on paper including barns, locations with animals, T4C devices , straw
+            areas , vector feed fences, milk tank and concentrate silos</p>
+          <p>
+            <b>1)</b>Please enter your farm dimensions:
+          </p>
+          <div class="row mb-3">
+            <div class="input-group col-6">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Width<small class="pl-1">(cm)</small></div>
+              </div>
+              <input type="number" value="0" class="form-control" id="wizardWidth" placeholder="cm"
+                data-bind="value: canvasProperties().getWidth, valueUpdate: 'afterkeydown'">
+            </div>
+            <div class="input-group col-6">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Length<small class="pl-1">(cm)</small></div>
+              </div>
+              <input type="number" value="0" class="form-control" id="wizardLength" placeholder="cm"
+                data-bind="value: canvasProperties().getHeight, valueUpdate: 'afterkeydown'">
+            </div>
+          </div>
+          <p><b>2)</b>Before drawing the device (Astronaut for example) please draw first a outer barn and then a
+            location</p>
+          <p><b>3)</b>If you have multiple barns and want barn specific reporting, multiple barns can be added.</p>
+          <p><a id="showExamplePic" class="text-danger" href="javascript:void(0)">Show example picture</a></p>
+        </div>
+        <div class="modal-footer">
+          <button id="continue" type="button" class="btn btn-t4c" data-dismiss="modal"
+            data-bind="enable: canvasProperties().wizardContinueEnabled, click: saveCanvas">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Setup wizard modal end -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="elementModal" tabindex="-1" role="dialog" aria-labelledby="elementModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="elementModalLongTitle">Select Type</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="modalBodyTypes">
+            <div class="row">
+              <div class="col">
+                <h5 class="border border-danger border-top-0 border-right-0 border-left-0">Devices</h5>
+                <div class="form type-form" data-bind="foreach: vm.devices">
+                  <div class="form-check">
+                    <input class="form-check-input"
+                      data-bind="value: type(), attr: { id: 'chk_' + type() }, enable: status()" type="radio"
+                      name="farmCheckBox">
+                    <label class="form-check-label" data-bind="text: name(), attr: { for: 'chk_' + type() }"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h5 class="border border-danger border-top-0 border-right-0 border-left-0">Physicals</h5>
+                <div class="form type-form" data-bind="foreach: physicals">
+                  <div class="form-check">
+                    <input class="form-check-input"
+                      data-bind="value: type(), attr: { id: 'chk_' + type() }, enable: status()" type="radio"
+                      name="farmCheckBox">
+                    <label class="form-check-label" data-bind="text: name(), attr: { for: 'chk_' + type() }"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h5 class="border border-danger border-top-0 border-right-0 border-left-0">Objects</h5>
+                <div class="form type-form" data-bind="foreach: objects">
+                  <div class="form-check">
+                    <input class="form-check-input"
+                      data-bind="value: type(), attr: { id: 'chk_' + type() }, enable: status()" type="radio"
+                      name="farmCheckBox">
+                    <label class="form-check-label" data-bind="text: name(), attr: { for: 'chk_' + type() }"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modalBodyContent"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+          <button id="nextStep" type="button" class="btn btn-default">Next</button>
+          <button id="backStep" type="button" class="btn btn-default">Back</button>
+          <button id="saveElement" type="button" class="btn btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal end-->
+  <!--context menu start-->
+  <ul id="context-menu" class="dropdown-menu">
+    <li id="ddlDrawNewItem" data-canvas="true" class="dropdown-item"><a class="text-dark nodecor d-flex"
+        href="javascipt:void(0)">
+        <i class="fa fa-pen-nib pr-1 text-primary mt-1 mr-1"></i><strong>Draw New Item</strong>
+      </a></li>
+    <li class="dropdown-divider"></li>
+    <li class="dropdown-item pb-2 pt-2"><a class="text-dark nodecor d-flex" href="javascript:void(0)"
+        data-bind="click: editElement">
+        <i class="fas fa-pen pr-1 text-secondary mt-1 mr-1"></i>Edit
+      </a></li>
+    <li id="ddlDeleteItem" class="dropdown-item pb-2 pt-2"><a class="text-dark nodecor d-flex" href="javascript:void(0)"
+        data-toggle="confirmation" data-popout="true">
+        <i class="fas fa-trash pr-1 text-danger mt-1 mr-1"></i>Delete
+      </a></li>
+  </ul>
+  <!--context menu end-->
+  <div class="row h-100">
+    <div data-bind="attr: { class: editMode() ? 'col-xl-10 col-lg-9 col-md-8 col-sm- col-xs-' : 'col-12' }"
+      class="col-12">
+      <div id="designCard" class="card h-100">
+        <div class="card-header bg-light">
+          <strong>Farm Design Canvas</strong>
+          <div class="float-right position-absolute fg-switch-block">
+            <div class="fg-lagenda float-left">
+              <div data-bind="foreach:$root.legenda" class="float-left mr-1">
+                <span class="badge"
+                  data-bind="style: { backgroundColor: color, border: border, color: textColor }, text: name"></span>
+              </div>
+              <a class="badge badge-secondary show-hierarchy position-relative text-white" data-toggle="collapse"
+                data-target="#show-hierarchy" aria-expanded="false">Show hierarchy
+                <div data-bind="style: { backgroundImage: vm.legendaPicture }"
+                  class="collapse hierarchy-block position-absolute" id="show-hierarchy">
+                </div>
+              </a>
+            </div>
+            <button class="btn btn-sm btn-t4c mr-3 ml-3 float-right font-weight-bold"
+              data-bind="click: switchToEditMode, text: editMode() ? 'Switch to Preview mode' : 'Switch to Edit mode'"></button>
+          </div>
+        </div>
+        <div class="card-body h-100">
+          <div class="farm h-100">
+            <div class="context" id="draw-area" data-toggle="context" data-target="#context-menu">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-2 col-lg-3 col-md-4 col-sm- col-xs-" id="drawingObjectBlock"
+      data-bind="style: { display: editMode() ? 'block' : 'none' }">
+      <div class="btn-group d-flex" role="group" aria-label="Basic example">
+        <button type="button" id="draw" class="btn btn-t4c btn-sm  mb-2 font-weight-bold"
+          data-bind="style: { display: editMode() ? 'block' : 'none' }">
+          <i class="fa fa-pen-nib mr-1" aria-hidden="true"></i>Draw New Item
+        </button>
+        <button type="button" id="saveAll" class="btn btn-success btn-sm  mb-2 font-weight-bold"
+          data-bind="enable:vm.getUnsavedChangeObjects().length>0,style: { display: editMode() ? 'block' : 'none' }">
+          <span id="unsavedChanges" data-toggle="tooltip" class="badge badge-danger mr-1"
+            data-bind="visible:vm.getUnsavedChangeObjects().length>0, text:vm.getUnsavedChangeObjects().length,attr: { title: 'There are unsaved changes!' }"></span>Save
+          All Design
+        </button>
+      </div>
+      <div id="canvasPropertiesBlock" class="card">
+        <div class="card-header">
+          <button class="btn btn-link p-0 text-dark nodecor" id="canvasProperties" data-toggle="collapse"
+            data-target="#canvas-prop-body" aria-expanded="true" aria-controls="canvas-prop-body">
+            <i class="fas fa-caret-down"></i>
+            <strong>Canvas Properties</strong>
+          </button>
+        </div>
+        <div id="canvas-prop-body" class="collapse show">
+          <div class="card-body pt-2 pb-2">
+            <div class="form-group row mb-1">
+              <label for="canvasW" class="col-sm-4 col-form-label font-weight-bold">Zoom</label>
+              <div class="col-sm-8">
+                <input type="text" readonly class="form-control-plaintext" id="canvasZoom"
+                  data-bind="value: canvasProperties().zoom() + '%'">
+              </div>
+            </div>
+            <div class="form-group mb-1">
+              <input id="bsSliderFarmZoom" type="text" data-slider-min="5" data-slider-max="50" data-slider-step="1"
+                data-bind="attr: { 'data-slider-value': canvasProperties().zoom(), 'data-value': canvasProperties().zoom() }" />
+            </div>
+            <div class="form-group row mb-1">
+              <label for="canvasW" class="col-sm-7 col-form-label font-weight-bold pr-0">Width<small
+                  class="ml-1">(cm)</small></label>
+              <div class="col-sm-5 pl-0">
+                <input min="500" step="5" max="10000" type="number" class="form-control form-control-sm text-center"
+                  id="canvasW" value="0" placeholder="w"
+                  data-bind="value: canvasProperties().getWidth, valueUpdate: 'afterkeydown'">
+              </div>
+              <label for="canvasH" class="col-sm-7 col-form-label font-weight-bold pr-0">Length<small
+                  class="ml-1">(cm)</small></label>
+              <div class="col-sm-5 pl-0">
+                <input min="500" step="5" max="10000" type="number" class="form-control form-control-sm text-center"
+                  id="canvasH" value="0" placeholder="h"
+                  data-bind="value: canvasProperties().getHeight, valueUpdate: 'afterkeydown'">
+              </div>
+            </div>
+            <button id="updateCanvas" type="button" class="btn btn-sm btn-success w-100 font-weight-bold"
+              data-bind="click: saveCanvas">
+              <i class="far fa-save mr-1" aria-hidden="true"></i>
+              Save</button>
+          </div>
+        </div>
+      </div>
+      <div id="objectInfCard" class="card mt-3" data-bind="style: { display: editMode() ? 'block' : 'none' }"
+        data-toggle="collapse">
+        <div class="card-header bg-light text-dark">
+          <button class="btn btn-link p-0 text-dark nodecor" id="objectInf" data-toggle="collapse"
+            data-target="#objectInfCard-prop-body" aria-expanded="true" aria-controls="objectInfCard-prop-body">
+            <i class="fas fa-caret-down"></i>
+            <strong>Object Information</strong>
+          </button>
+        </div>
+        <div id="objectInfCard-prop-body" class="collapse">
+          <div class="card-body pt-2 pb-2">
+            <div class="form-group row active-type mb-1"
+              data-bind="style: { backgroundColor: getActiveElement().color, border: getActiveElement().border, color: getActiveElement().textColor }">
+              <label for="objectType" class="col-sm-4 col-form-label font-weight-bold pr-0">Type</label>
+              <label id="lblObjectType" class="col-sm-8 col-form-label"
+                data-bind="text: getActiveElement().name"></label>
+            </div>
+            <div class="form-group row mb-1" data-bind="visible: activeElement" style="display: none;">
+              <label for="objectName" class="col-sm-4 col-form-label font-weight-bold pr-0">Name</label>
+              <label id="lblObjectName" class="col-sm-8 col-form-label"
+                data-bind="text: activeElement() ? getActiveElement().formData().NodeName : ''"></label>
+            </div>
+            <div class="form-group row mb-1">
+              <label for="txtObjectX" class="col-sm-2 col-form-label font-weight-bold pr-0">X</label>
+              <div class="col-sm-4 pl-0">
+                <input min="0" step="5" type="number" class="form-control form-control-sm text-center tooltip-cm"
+                  id="txtObjectX" value="0" placeholder="x"
+                  data-bind="value: getActiveElement().getX, valueUpdate: 'afterkeydown'">
+              </div>
+              <label for="txtObjectY" class="col-sm-2 col-form-label font-weight-bold pr-0">Y</label>
+              <div class="col-sm-4 pl-0 mb-1">
+                <input min="0" step="5" type="number" class="form-control form-control-sm text-center tooltip-cm"
+                  id="txtObjectY" value="0" placeholder="y"
+                  data-bind="value: getActiveElement().getY, valueUpdate: 'afterkeydown'">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="txtObjectW" class="col-sm-2 col-form-label font-weight-bold pr-0">W</label>
+              <div class="col-sm-4 pl-0">
+                <input min="0" step="5" type="number" class="form-control form-control-sm text-center tooltip-cm"
+                  id="txtObjectW" value="0" placeholder="w"
+                  data-bind="value: getActiveElement().getW, valueUpdate: 'afterkeydown'">
+              </div>
+              <label for="txtObjectH" class="col-sm-2 col-form-label font-weight-bold pr-0">L</label>
+              <div class="col-sm-4 pl-0">
+                <input min="0" step="5" type="number" class="form-control form-control-sm text-center tooltip-cm"
+                  id="txtObjectH" value="0" placeholder="h"
+                  data-bind="value: getActiveElement().getH, valueUpdate: 'afterkeydown'">
+              </div>
+            </div>
+            <!-- routing section -->
+            <div data-bind="if : activeElement() ? activeElement().routingIsEnable() : false">
+              <div class="dropdown mb-2">
+                <a class="dropdown-toggle font-weight-bold" id="routingDropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false" data-bind="text: activeElement().routingType().type()"></a>
+                <span class="float-right">Default
+                </span>
+                <div class="dropdown-menu" aria-labelledby="routingDropdownMenuButton"
+                  data-bind="foreach: routingTypes">
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    data-bind="text: type, click: $parent.changeRoutingType.bind($data)">Routing</a>
+                </div>
+              </div>
+              <div data-bind="foreach: {data: activeElement().routings, as :'routingItem' }">
+                <div class="row pt-1 pb-2 border-bottom border-bottom-1" data-bind="visible: !isDeleted()">
+                  <div class="col-sm-2 pr-0 font-weight-bold" data-bind="directionName: $index()"></div>
+                  <div class="col-sm-8">
+                    <div class="dropdown btn-group w-100" role="group">
+                      <a class="dropdown-toggle nodecor text-dark w-100" href="#" id="" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"
+                        data-bind="click: $root.getSelectableRouteElement, attr: { id: 'routeItem_' + $index() }, text: to().id != 0 ? to().name : 'Select Object'"></a>
+                      <div class="dropdown-menu border-bottom-2 w-100" aria-labelledby="dropdownMenuLink"
+                        data-bind="attr: { id: 'routeItem_' + $index() }">
+                        <div class="container">
+                          <div class="form-group">
+                            <div class="input-group-btn">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text mini-search-icon">
+                                  <i class="fas fa-search" aria-hidden="true"></i>
+                                </span>
+                                <input type="text" class="form-control form-control-sm" placeholder="Search..."
+                                  id="search" name="search"
+                                  data-bind="value: $root.searchElementKeyword, valueUpdate: 'keyup'" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-scroller" style="max-height: 150px; overflow: hidden;">
+                            <div class="dropdown-item text-center"
+                              data-bind="visible: $root.filteredCreatingElementsByRoutable().length == 0">
+                              No Result
+                            </div>
+                            <div data-bind="foreach:$root.filteredCreatingElementsByRoutable">
+                              <button class="dropdown-item p-1" type="button"
+                                data-bind="click: $root.selectRoutingElement.bind($data, routingItem, $element), hoverToggle: guid">
+                                <div class="float-left mt-2 mr-1 routing-selector-box"
+                                  data-bind="style: { backgroundColor: color, border: border }"></div>
+                                <div class="mt-1" data-bind="text: formData().NodeName"></div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 p-0">
+                    <input type="radio" name="routingDefault" data-bind="routingSetDefault: routingItem" />
+                    <a href="javascript:void(0)" class="remove-routing-icon"
+                      data-bind="ko if:$index()>-1,click: $root.removeRouting.bind($data)">
+                      <i class="far fa-trash-alt"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-sm btn-muted w-100 mb-2 add-new-routing-element"
+                data-bind="visible: newRoutingVisible, click: $root.addNewRouting.bind()">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+              <!-- routing section end -->
+            </div>
+            <div class="btn-group d-flex" role="group" aria-label="Basic example">
+              <button id="updateObject" disabled type="button" class="btn btn-sm btn-success w-100 font-weight-bold"
+                data-bind="enable: activeElement, click: getActiveElement">
+                <i class="far fa-save mr-1" aria-hidden="true"></i>
+                Save</button>
+              <button id="deleteObject" disabled type="button" class="btn btn-sm btn-t4c w-100 font-weight-bold"
+                data-toggle="confirmation" data-popout="true" data-bind="enable: deleteIsActive">
+                <i class="far fa-trash-alt" aria-hidden="true"></i>
+                Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
