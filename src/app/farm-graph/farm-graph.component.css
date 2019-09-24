@@ -4,12 +4,12 @@
 @import "~malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
 @import "~bootstrap-slider/dist/css/bootstrap-slider.min.css";*/
 
-@import "../../../node_modules/jquery-ui-dist/jquery-ui.min.css";
-@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.css";
-@import "../../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
-@import "../../../node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css";
-@import "../../../node_modules/awesome-notifications/dist/style.css";
+@import "~jquery-ui-dist/jquery-ui.min.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
+@import "~bootstrap-slider/dist/css/bootstrap-slider.min.css";
+@import "~awesome-notifications/dist/style.css";
 
 html,
 body,
@@ -395,15 +395,16 @@ button#canvasProperties[aria-expanded="true"]>i:before {
   padding: 5px 20px;
 }
 
-.vertical-text{
+.vertical-text {
   writing-mode: vertical-rl;
-text-orientation: mixed;
+  text-orientation: mixed;
 }
 
-.cubicle{
+.cubicle {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-#unsavedChanges{
-  font-size:13px;
+
+#unsavedChanges {
+  font-size: 13px;
 }
